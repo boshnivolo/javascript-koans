@@ -17,10 +17,11 @@ describe("About Expects", function() {
 
   // Some ways of asserting equality are better than others.
   it("should assert equality a better way", function () {
-    var actual = 1 + 1;
+    var actual = 1 + 1
+    var equality =2;
 
     // to.equal() compares using "strict" equality (===)
-    expect(actual).to.equal(FILL_ME_IN);
+    expect(actual).to.equal(equality);
   });
 
   // Sometimes you need to be really exact about what you "type."
@@ -28,13 +29,13 @@ describe("About Expects", function() {
     var actual = (1 + 1).toString();
 
     // use to.be.a() to check the type of a value
-    expect(actual).to.be.a(FILL_ME_IN);
+    expect(actual).to.be.a('string');
 
-    expect(actual).to.be(1); // Fails?
+    expect(actual).to.equal('2'); // Fails?
   });
 
   // Sometimes we will ask you to fill in the values.
   it("should have filled in values", function () {
-    expect(1 + 1).to.equal(FILL_ME_IN);
+    expect(1 + 1).to.equal(2);
   });
 });
